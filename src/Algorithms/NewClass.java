@@ -33,15 +33,16 @@ public class NewClass {
         addNode(n5, 3);
         Node n6 = new Node();
         addNode(n6, 9);
-        System.out.println("In Order");
-        printInOrder(rootNode);
-        System.out.println("Pre Order");
-        printPreOrder(rootNode);
-        System.out.println("Post Order");
-        printPostOrder(rootNode);
+        //System.out.println("In Order");
+        //printInOrder(rootNode);
+        //System.out.println("Pre Order");
+        //printPreOrder(rootNode);
+        //System.out.println("Post Order");
+        //printPostOrder(rootNode);
         height = heightOfBinaryTree(rootNode);
 
         System.out.println("Print data at each level");
+        //printDataAtLevel(rootNode);
         printDataAtLevelReverse(rootNode);
         // System.out.println("Depth First");
        // reverseLevelOrder();
@@ -174,7 +175,7 @@ public class NewClass {
             }
             System.out.println("");
         }
-        System.out.println("Reversed");
+        //System.out.println("Reversed");
  
 
     }
@@ -196,9 +197,10 @@ public class NewClass {
                 if (n.getRightNode() != null) {
                     stack.add(n.getRightNode());
                 }
-                levelNodes--;
-                System.out.println(""+stack.pop().getData());
+                
             }
+            levelNodes--;
+                System.out.println(""+stack.pop().getData());
         }
             System.out.println("");
         }
