@@ -40,7 +40,9 @@ String recording;
      */
     public static void main(String[] args) {
         
-        int i = 461012;
+        final double SQRT_2 = Math.sqrt(2);
+          System.out.println(SQRT_2);
+        /*int i = 461012;
         System.out.format("The value of i is: %d %n", i);
         // TODO code application logic 
 
@@ -67,7 +69,7 @@ String recording;
         }
         } catch (Exception ex) {
             Logger.getLogger(Test.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }*/
     }
 
 }
